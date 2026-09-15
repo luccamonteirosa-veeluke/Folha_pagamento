@@ -1,6 +1,7 @@
 import static java.lang.IO.*;
 
 void main() {
+    while(true){
     // 1. Leitura inicial dos dados dos funcionários
     println("=== CADASTRO GERENTE ===");
     String nome_gerente = readln("insira o nome do gerente: ");
@@ -26,7 +27,8 @@ void main() {
         println("\n[ERRO] Dados invalidos! O nome e CPF nao podem ser vazios, e o salario deve ser maior que zero.");
         return;
     }
-
+        break;
+}
     // Instanciação das classes
     Gerentes ge = new Gerentes(nome_gerente, cpf_gerente, salario_gerente);
     Desenvolvedor de = new Desenvolvedor(nome_dev, cpf_dev, salario_dev);
