@@ -12,7 +12,7 @@ public class Vendedor extends Funcionario {
     }
 
     public double calcularComissao() {
-        return this.totalVendido * 0.02;
+        return this.totalVendido * 0.05;
     }
 
     @Override
